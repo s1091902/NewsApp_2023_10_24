@@ -57,9 +57,16 @@
                                              Spacing ="0"
                                              VerticalOptions="Center">
                             <Image HeightRequest="200"
-                                    Aspect="Fill"/>
+                                    Aspect="Fill"
+                                    Source="{Binding Image}"/>
                             <Label FontSize="Medium"
-                               />
+                                    Text="{Binding Title}"/>
+                            <Image HeightRequest="50"
+                                    Aspect="AspectFit"
+                                    Source="{Binding ImageUrl}"/>
+                            <Label FontSize="Medium"
+                                   HorizontalOptions="Center"
+                                    Text="{Binding Name}"/>
                         </VerticalStackLayout>
                     </Border>
                 </DataTemplate>
